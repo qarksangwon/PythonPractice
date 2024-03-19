@@ -19,5 +19,6 @@ if isWeekly == 1:
     salary = 9620 * time
 else :
     salary = 9620*1.5*time
-print(f"입력한 시간 동안 근무한 주간 또는 야간 급여는 {salary}원 입니다.")
+type = isWeekly==1 and "주간" or "야간"
+print(f"입력한 시간 동안 근무한 {type} 급여는 {salary}원 입니다.")
 
