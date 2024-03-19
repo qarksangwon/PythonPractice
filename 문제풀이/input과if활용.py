@@ -13,7 +13,7 @@ if len(id) >= 10:
     pw = input("Password 입력 : ")
     if len(pw) < 8 or len(pw) > 16:
         print("Password 는 8자 이상 16자 이하로 입력 바랍니다.")
-    elif pw.find(id) > 0 :
+    elif pw.find(id) >= 0 :
         print("Password 는 ID 를 포함할 수 없습니다.")
     else :
         print(f"ID : {id}  Password : {pw}")
