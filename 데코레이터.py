@@ -18,8 +18,11 @@ def for_sum():
     print(sum)
 
 # 방법 1
-test = datetime_deco(for_sum)
-test()
+# test = datetime_deco(for_sum)
+# test()
+# 이거 두번 찍히는데 이는 datetime_deco 내부에서 func()를 호출할 때 마다,
+# 현재 시간을 호출하는데 for_sum()에서 반복문이 여러번 실행돼 반복할 때 decorator 함수가 실행돼서
+# 시간이 여러번 찍히는 것이라 한다.
 
 # 방법 2
 for_sum()
