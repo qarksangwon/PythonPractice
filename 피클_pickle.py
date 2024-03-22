@@ -6,11 +6,11 @@ import pickle
 
 # 객체를 직렬화하여 파일에 저장하기
 data = {'name': 'Alice', 'age': 30, 'city': 'New York'}
-with open('data.pickle', 'wb') as file:
+with open('문제풀이/data.pickle', 'wb') as file:
     pickle.dump(data, file)
 
 # 파일에서 객체를 역직렬화하여 복원하기
-with open('data.pickle', 'rb') as file:
+with open('문제풀이/data.pickle', 'rb') as file:
     restored_data = pickle.load(file)
 
 print(restored_data)  # {'name': 'Alice', 'age': 30, 'city': 'New York'}
