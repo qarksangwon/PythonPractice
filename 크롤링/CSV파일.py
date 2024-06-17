@@ -9,3 +9,4 @@ f2 = open('output.csv', 'r', encoding='utf-8')
 reader = csv.reader(f2)
 for row in reader:
     print(row)
+f2.close()
