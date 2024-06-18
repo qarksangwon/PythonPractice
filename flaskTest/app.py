@@ -38,6 +38,14 @@ def get_weather():
 
     return output
 
+@app.route('/api/query', methods=['get'])
+def get_query():
+    output=""
+    item_type = request.args.get('type', default=None, type=None)
+    item_color = request.args.get('color', default=None, type=None)
+    output += f"<{item_type} style='color : {item_color}'>item_color</{item_type}>"
+    return output
+
 # 서버 실행
 if __name__ == '__main__':
     app.run(debug=True)
