@@ -1,4 +1,4 @@
-score_file = open("score.txt","w",encoding="utf-8") # write 모드는 새로 써짐
+score_file = open("score.txt", "w", encoding="utf-8") # write 모드는 새로 써짐
 # 기존 파일에 덧입력 하고싶다면, "a"
 # 한글은 유니코드 체제 -> utf-8
 

@@ -17,10 +17,10 @@ import os
 cwd = os.getcwd() # 현재 작업 디렉토리
 print("현 작업 디렉토리 :", cwd)
 
-if not os.path.isdir("testdir"):
-    os.mkdir("testdir") # 디렉토리 생성
+if not os.path.isdir("../testdir"):
+    os.mkdir("../testdir") # 디렉토리 생성
 print(os.path.isfile("score.txt")) # 파일 여부 확인
-print(os.path.isdir("testdir")) # 디렉토리 여부 확인
+print(os.path.isdir("../testdir")) # 디렉토리 여부 확인
 # os.system("pwd") # 시스템 명령 실행
 
 def add(a,b):
