@@ -53,7 +53,12 @@ def get_path_item(item_id):
     output += f"<h1>{path_item}</h1>"
     return output
 
-
+@app.route('/api/register', methods=['POST'])
+def post_register():
+    data = request.get_json()
+    username = data.get('username', None)  # .get 메소드를 사용하여 기본값을 None으로 설정합니다.
+    password = data.get('password', None)
+    return jsonify({"username": username, "password": password})
 
 # 서버 실행
 if __name__ == '__main__':
